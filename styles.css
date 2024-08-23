@@ -100,6 +100,14 @@ footer {
     }
 }
 
+@media (max-width: 425px) {
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 22px;
+    }
+}
+
 .description {
     padding-left: 10px;
     padding-right: 10px;
