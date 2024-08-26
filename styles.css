@@ -32,7 +32,7 @@ a:hover {
 }
 
 body {
-    background: #ffffff;
+    background: #fdf5e5;
     color: rgb(0, 0, 0);
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +41,7 @@ body {
     min-height: 100vh;
     padding: 0;
 }
+
 
 button {
     background-color: #6b6b6b;
@@ -331,18 +332,181 @@ ul {
     background-color: black;
 }
 
+.contact-container {
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdfdfd;
+    /* Background similar to examples */
+}
 
+.contact-container h1 {
+    font-size: 48px;
+    /* Adjusted size for better readability */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 600;
+    /* Slightly bolder for emphasis */
+    color: #333;
+    /* Darker text for better contrast */
+}
 
+.email-link {
+    font-size: 32px;
+    /* Slightly smaller for subtlety */
+    color: rgb(129, 159, 134);
+    /* Muted color for a softer look */
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    /* Less bold for a modern look */
+}
 
+.email-link:hover {
+    text-decoration: none;
+}
 
+.contact-description {
+    font-size: 18px;
+    /* Slightly larger for readability */
+    margin-bottom: 40px;
+    color: #666;
+    /* Muted color */
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    /* Restricting width for better design */
+}
 
+.form-row {
+    display: flex;
+    flex-direction: column;
+    /* Stack vertically for a cleaner look */
+    width: 100%;
+    margin-bottom: 10px;
+}
 
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
 
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    /* Subtle border for input fields */
+    background: #fff;
+    /* White background for clarity */
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* Slightly rounded corners */
+    transition: border-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
 
+    /* Smooth transition effect */
+}
 
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #999;
+    /* Darker border on focus for emphasis */
+}
 
+textarea {
+    resize: vertical;
+    /* Allow vertical resizing */
+}
+
+.submit-button {
+    background-color: #007bff;
+    /* Blue button similar to the examples */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    /* Remove border */
+    border-radius: 25px;
+    font-size: 18px;
+    /* Larger text for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.social-links {
+    margin-top: 50px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.social-icon-g {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+    filter: invert(1) grayscale(1) brightness(0);
+
+}
+
+.social-icon-g img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-icon-g:hover {
+    transform: scale(1.2);
+}
 
 /*
 .gallery {
