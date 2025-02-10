@@ -12,8 +12,9 @@ document.getElementById("githubbutton").addEventListener("click", function() {
   window.open(linkedInUrl, "_blank");
 });
 
-window.onload = function() {
-  // Reset the form fields when the page loads
-  document.getElementById("contact-form").reset();
-};
-  
+window.addEventListener("pageshow", () => {
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.reset();
+  }
+});

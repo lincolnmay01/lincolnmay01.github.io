@@ -331,6 +331,7 @@ ul {
     flex-direction: column;
     align-items: center;
     background-color: #fdfdfd;
+    flex: 1;
 }
 
 .contact-container h1 {
