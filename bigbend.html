@@ -4,8 +4,8 @@
 <head>
     <title>Travel - Lincoln May</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <script src="lightbox.js" defer></script>
+   
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -101,16 +101,32 @@
             <img src= "images/bigbend/IMG_8107.jpeg">
             <img src= "images/bigbend/IMG_8135.jpeg">
                
-        </div>     
+        </div> 
+        <div class="lightbox">
+
+            <!-- Close button -->
+            <button class="close">X</button>
+          
+            <!-- Next/previous buttons -->
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+          
+            <img class="lightbox-img">
+          
+            <!-- Caption -->
+            <div class="caption">Image caption</div>
+          
+          </div>    
     </section>
         
-    </section>
+    
     
     <footer> 
         <p>Let's work together!</p>
         <button id="emailButton">Email Me</button>
     </footer>
-    
+    <script src="lightbox.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
    
 </html>

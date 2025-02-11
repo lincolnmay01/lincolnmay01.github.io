@@ -300,28 +300,7 @@ ul {
     list-style-type: none;
 }
 
-#lightbox {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .8);
-    display: none;
-}
 
-#lightbox.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#lightbox img {
-    max-width: 95%;
-    max-height: 85%;
-    padding: 1px;
-    background-color: black;
-}
 
 .contact-container {
     margin: 0;
@@ -651,7 +630,64 @@ footer {
 
 
 }
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    z-index: 1000;
+}
 
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
 /*
 .gallery {
     height: 100%;
